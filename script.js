@@ -17,8 +17,6 @@ let closeBtn3 = document.getElementById('close-btn3');
 let closeBtn4= document.getElementById('close-btn4');
 let closeBtnEmail= document.getElementById('close-btn-email');
 
-//Kris buttons
-let btnShowSolCount = document.querySelector("#btnCountDup");
 
 //Event for "How do you like my Website" Switches
 
