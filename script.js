@@ -1,35 +1,41 @@
-
 // Buttons
-let sucksBtn = document.getElementById('sucksSwitch');
-let greatBtn = document.getElementById('greatSwitch');
-let mehBtn = document.getElementById('MehSwitch');
-let emailBtn = document.getElementById('Email-Btn')
+const sucksBtn = document.getElementById('sucksSwitch');
+const greatBtn = document.getElementById('greatSwitch');
+const mehBtn = document.getElementById('MehSwitch');
+const emailBtn = document.getElementById('Email-Btn');
+const orangeDropDownBtn = document.getElementById('drop-down-orange-btn');
+const redDropDownBtn = document.getElementById('drop-down-red-btn');
+const bluescreenBtn = document.getElementById('red-bluescreen-btn');
+//Drop down div and modal
+const redBtnDiv = document.getElementById('drop-down-red-btn-div');
+const dropDownModal = document.getElementById('drop-down-red-btn-div2');
 //Modal
-let modalContainer = document.getElementById('modal-container');
-let secondModalContainer = document.getElementById('modal-container2');
-let thirdModalContainer = document.getElementById('modal-container3');
-let fourthModalContainer = document.getElementById('modal-container4');
-let emailModalContainer = document.getElementById('modal-Email');
+const modalContainer = document.getElementById('modal-container');
+const secondModalContainer = document.getElementById('modal-container2');
+const thirdModalContainer = document.getElementById('modal-container3');
+const fourthModalContainer = document.getElementById('modal-container4');
+const emailModalContainer = document.getElementById('modal-Email');
 // Close Buttons
-let closeBtn = document.getElementById('close-btn');
-let closeBtn2 = document.getElementById('close-btn2');
-let closeBtn3 = document.getElementById('close-btn3');
-let closeBtn4= document.getElementById('close-btn4');
-let closeBtnEmail= document.getElementById('close-btn-email');
+const closeBtn = document.getElementById('close-btn');
+const closeBtn2 = document.getElementById('close-btn2');
+const closeBtn3 = document.getElementById('close-btn3');
+const closeBtn4 = document.getElementById('close-btn4');
+const closeBtnEmail = document.getElementById('close-btn-email');
+//Bluescreen
 
+const bluescreenImg1 = document.getElementById('bluescreen-img1');
 
 //Event for "How do you like my Website" Switches
+var clickCount = 0;
+bluescreenBtn.addEventListener('click',function(){
+   
+    bluescreenImg1.style.display = 'block';
+    
+    
+});
+    
+   
 
-sucksBtn.addEventListener('click',function(){
-   
-  
-});
-closeBtn.addEventListener('click', function(){
-    modalContainer.style.display = 'none'
-    
-    
-   
-});
 closeBtn2.addEventListener('click', function(){
     secondModalContainer.style.display = 'none'
 });
@@ -43,7 +49,7 @@ closeBtn4.addEventListener('click', function(){
 closeBtnEmail.addEventListener('click', function(){
     emailModalContainer.style.display = 'none'
        });
-var clickCount = 0;
+
 
 window.addEventListener('click', function(e){
     
@@ -68,8 +74,11 @@ window.addEventListener('click', function(e){
        
         emailModalContainer.style.display = 'none';
     }
+
+  
     
 });
+
 sucksBtn.addEventListener('click',function(){
     clickCount++;
     if(clickCount === 1){
@@ -101,4 +110,18 @@ mehBtn.addEventListener('click',function(){
 
 emailBtn.addEventListener('click',function(){
     emailModalContainer.style.display = 'block';
-})
+});
+
+//Event for Drop down Menu 
+
+orangeDropDownBtn.addEventListener('click', function(){
+    redBtnDiv.style.display='block'
+});
+
+redDropDownBtn.addEventListener('click',function(){
+dropDownModal.style.display='block';
+});
+
+//Bluescreen 
+
+
