@@ -17,6 +17,13 @@ let closeBtn3 = document.getElementById('close-btn3');
 let closeBtn4= document.getElementById('close-btn4');
 let closeBtnEmail= document.getElementById('close-btn-email');
 
+//Kris Images
+const imgCountDup = document.getElementById("imgCountDup");
+const countDupSolution = "./images/countDuplicatesSolution.png";
+const imgHashtag = document.getElementById("imgHashtag");
+const hashtagSolution = "./images/hashtagSolution.png";
+const imgSortOdds = document.getElementById("imgSortOdds");
+const sortOddsSolution = "./images/sortOddsSolution.png";
 
 //Event for "How do you like my Website" Switches
 
@@ -104,6 +111,6 @@ emailBtn.addEventListener('click',function(){
 });
 
 //Kris Events
-function switchImg() {
-    document.getElementById("imgCountDup").src = "./images/countDuplicatesSolution.png";
+function switchImg(image, source) {
+    image.src = source;
 };
