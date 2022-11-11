@@ -70,6 +70,9 @@
     height: 100%;
     z-index: 1;
 }
+.background-gb{
+    background-color: gainsboro;
+}
 #drop-down-red-btn-div,#drop-down-red-btn-div2{
     display:none;
 }

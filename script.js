@@ -24,6 +24,13 @@ const closeBtnEmail = document.getElementById('close-btn-email');
 //Bluescreen
 
 const bluescreenImg1 = document.getElementById('bluescreen-img1');
+//Kris Images
+const imgCountDup = document.getElementById("imgCountDup");
+const countDupSolution = "./images/countDuplicatesSolution.png";
+const imgHashtag = document.getElementById("imgHashtag");
+const hashtagSolution = "./images/hashtagSolution.png";
+const imgSortOdds = document.getElementById("imgSortOdds");
+const sortOddsSolution = "./images/sortOddsSolution.png";
 
 //Event for "How do you like my Website" Switches
 var clickCount = 0;
@@ -110,18 +117,4 @@ mehBtn.addEventListener('click',function(){
 
 emailBtn.addEventListener('click',function(){
     emailModalContainer.style.display = 'block';
-});
-
-//Event for Drop down Menu 
-
-orangeDropDownBtn.addEventListener('click', function(){
-    redBtnDiv.style.display='block'
-});
-
-redDropDownBtn.addEventListener('click',function(){
-dropDownModal.style.display='block';
-});
-
-//Bluescreen 
-
-
+})
