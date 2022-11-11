@@ -22,15 +22,17 @@ const closeBtn3 = document.getElementById('close-btn3');
 const closeBtn4 = document.getElementById('close-btn4');
 const closeBtnEmail = document.getElementById('close-btn-email');
 //Bluescreen
+const bluescreen = document.getElementById('bluescreen-img');
 
-const bluescreenImg1 = document.getElementById('bluescreen-img1');
-//Kris Images
-const imgCountDup = document.getElementById("imgCountDup");
-const countDupSolution = "./images/countDuplicatesSolution.png";
-const imgHashtag = document.getElementById("imgHashtag");
-const hashtagSolution = "./images/hashtagSolution.png";
-const imgSortOdds = document.getElementById("imgSortOdds");
-const sortOddsSolution = "./images/sortOddsSolution.png";
+orangeDropDownBtn.addEventListener ('click', function(){
+    redBtnDiv.style.display = 'block'
+})
+redDropDownBtn.addEventListener ('click', function(){
+   dropDownModal.style.display = 'block'
+})
+bluescreenBtn.addEventListener ('click', function(){
+    bluescreen.style.display = 'block'
+ })
 
 //Event for "How do you like my Website" Switches
 var clickCount = 0;
